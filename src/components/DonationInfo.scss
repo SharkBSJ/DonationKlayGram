@@ -1,0 +1,22 @@
+.DonationInfo__amount,
+.DonationInfo__caption {
+  width: 420px;
+  font-size: 14px;
+  @include breakWord();
+}
+
+.DonationInfo__name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.DonationInfo__caption {
+  margin-bottom: 16px;
+}
+
+.DonationInfo__id, 
+.DonationInfo__owner
+.DonationInfo__issueDate {
+  font-size: 12px;
+  color: $middle-grey;
+}

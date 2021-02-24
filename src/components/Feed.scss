@@ -1,0 +1,43 @@
+.Feed {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include breakpoint("max-card") {
+    padding: 40px 0;
+  }
+}
+
+.FeedDonation {
+  position: relative;
+  width: 100%;
+  max-width: $max-card-width;
+  margin-Top: 30px;
+  margin-Bottom: 30px;
+  &:last-child { margin-bottom: 0; }
+  @include cardBox();
+  @include breakpoint("max-card") {
+    margin-bottom: 20px;
+  }
+}
+
+.FeedDonation__info {
+  position: relative;
+  padding: 24px 24px 40px 24px;
+}
+
+.Feed__empty {
+  font-size: 40px;
+  font-weight: bold;
+  @include fixed-center();
+}
+
+.Feed__All {
+  font-size: 30px;
+  font-weight: bold;
+  margin-Top: 30px;
+  margin-Bottom: 30px;
+}
